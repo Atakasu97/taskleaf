@@ -31,6 +31,7 @@ gem 'slim-rails'
 gem 'html2slim'
 # Bootstrap導入
 gem 'bootstrap'
+gem 'jquery-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
