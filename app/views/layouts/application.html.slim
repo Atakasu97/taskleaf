@@ -8,8 +8,16 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
-      .navbar-brand Taskleaf
+    ul class="nav justify-content-center"
+      li class="navitem"
+        a class="nav-link" href="#" Active
+      li class="navitem"
+        a class="nav-link" href="#" Link
+      li class="navitem"
+        a class="nav-link" href="#" Link
+      li class="navitem"
+        a class="nav-link" href="#" Link
     - if flash.notice.present?
       .alert.alert-success= flash.notice
     = yield
+
