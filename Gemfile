@@ -25,13 +25,19 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 # Slimを使用
 gem 'slim-rails'
 gem 'html2slim'
 # Bootstrap導入
 gem 'bootstrap'
 gem 'jquery-rails'
+# UTLを文章に追加
+gem 'rails_autolink'
+# RSpecテスト
+gem 'rspec-rails', '~> 3.7'
+# テストデータ作成
+gem 'factory_bot_rails', '~> 4.11'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

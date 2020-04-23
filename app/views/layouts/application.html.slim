@@ -8,15 +8,20 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    ul class="nav justify-content-center"
+    ul.nav.justify-content-center.bg-secondary.mb-3
       li class="navitem"
-        a class="nav-link" href="#" Active
+        a class="nav-link" href="/" Home
       li class="navitem"
-        a class="nav-link" href="#" Link
+        a class="nav-link" href="/tasks/new" New task
       li class="navitem"
-        a class="nav-link" href="#" Link
+        a class="nav-link" href="/admin/users/new" New admin
       li class="navitem"
-        a class="nav-link" href="#" Link
+        a class="nav-link" href="/admin/users" Index admin
+      - if current_user
+        li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link'
+      - else
+        li.nav-item= link_to 'ログイン', login_path, class: 'nav-link'
+          
     - if flash.notice.present?
       .alert.alert-success= flash.notice
     = yield
