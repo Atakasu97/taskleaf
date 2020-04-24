@@ -1,7 +1,35 @@
-.image-background {
-    background-image: image-url('fujisan.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+
+// ホームページ
+.cover-container{
+  max-width: 42em;
 }
+
+.masthead-brand {
+  float: left;
+}
+
+.nav-masthead {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+// .jumbotron-home {
+//     background-image: image-url('fujisan.jpg');
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     // background-size: cover;
+//     // background-attachment: fixed;
+// }
+
+// .hr-home {
+//   color: white;
+// }
+
