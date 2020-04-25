@@ -38,6 +38,13 @@ gem 'rails_autolink'
 gem 'rspec-rails', '~> 3.7'
 # テストデータ作成
 gem 'factory_bot_rails', '~> 4.11'
+# 検索機能
+gem 'ransack'
+# ページネーション
+gem 'kaminari'
+# 非同期処理
+gem 'sidekiq'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
